@@ -83,19 +83,19 @@ const productData = [
   },
 ];
 
-function HomePageProductCard() {
+function AllProduct() {
   const navigate = useNavigate();
   return (
-    <div className="mt-10">
+    <div className="py-8">
       {/* Heading  */}
       <div className="">
         <h1 className="mb-5 text-center text-2xl font-semibold">
-          Bestselling Products
+          All Products
         </h1>
       </div>
       {/* main  */}
       <section className="body-font text-gray-600">
-        <div className="container mx-auto px-5 py-5">
+        <div className="container mx-auto px-5 py-5 lg:px-0">
           <div className="-m-4 flex flex-wrap">
             {productData.map((item, index) => {
               const { image, title, price } = item;
@@ -103,14 +103,14 @@ function HomePageProductCard() {
                 <div key={index} className="w-full p-4 md:w-1/4">
                   <div className="h-full cursor-pointer overflow-hidden rounded-xl border border-gray-300 shadow-md">
                     <img
-                      onClick={() => navigate("./productinfo")}
+                      onClick={() => navigate("/productinfo")}
                       className="h-96 w-full lg:h-80"
                       src={image}
                       alt="blog"
                     />
                     <div className="p-6">
                       <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-gray-400">
-                        SavvyStore{" "}
+                        SavvyStore
                       </h2>
                       <h1 className="title-font mb-3 text-lg font-medium text-gray-900">
                         {title.substring(0, 25)}
@@ -133,4 +133,4 @@ function HomePageProductCard() {
   );
 }
 
-export default HomePageProductCard;
+export default AllProduct;

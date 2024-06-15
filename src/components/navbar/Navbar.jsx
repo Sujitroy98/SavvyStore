@@ -19,17 +19,18 @@ function Navbar() {
       </li>
       {/* User */}
       <li>
-        <Link to={"/"}>Kamal</Link>
+        <Link to={"/user-dashboard"}>Sujit</Link>
       </li>
       {/* Admin */}
-      {/* <li>
-            </li> */}
+      <li>
+        <Link to={"/admin-dashboard"}>Admin</Link>
+      </li>
       {/* logout */}
       {/* <li>
             </li> */}
       {/* Cart */}
       <li>
-        <Link to={"/cart"}></Link>
+        <Link to={"/cart"}>Cart(0)</Link>
       </li>
     </ul>
   );

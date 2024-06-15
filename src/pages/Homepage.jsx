@@ -1,3 +1,4 @@
+import Loader from "../components/Loader/Loader";
 import Category from "../components/category/Category";
 import HeroSection from "../components/heroSection/HeroSection";
 import HomePageProductCard from "../components/homePageProductCard/HomePageProductCard";
@@ -12,6 +13,7 @@ function Homepage() {
       <HomePageProductCard />
       <Track />
       <Testimonial />
+      <Loader />
     </div>
   );
 }
